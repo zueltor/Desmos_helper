@@ -7,8 +7,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        File file =
-                new File("values.txt");
+        File file = new File("values.txt");
         Scanner sc = new Scanner(file);
 
         ArrayList<Double> values = new ArrayList<>();
@@ -46,7 +45,7 @@ public class Main {
             pw.print(val + "," + height + "\n");
         }
         pw.print("1.1,1\n");
-        pw.print(String.format("Max %f in point %f",max_delta,point));
+        pw.print(String.format("\nMax difference %f in point %f",max_delta,point));
         pw.close();
         sc.close();
     }
